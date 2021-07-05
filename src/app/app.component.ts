@@ -47,7 +47,7 @@ export class AppComponent {
         this.audioObj.play()
 
       const handler = (event:Event) =>{
-        console.log(event);
+        // console.log(event);
         this.seek = this.audioObj.currentTime;
         this.duration = this.timeFormat(this.audioObj.duration);
         this.currentTime = this.timeFormat(this.audioObj.currentTime);
@@ -79,34 +79,34 @@ export class AppComponent {
 
   setValue(event:any){
     this.audioObj.volume = event.target.value
-    console.log(event.target.value)
+    // console.log(event.target.value)
   }
 
   onClick(url:any){
     this.streamObserver(url).subscribe(event=>{})
-    console.log(url);
+    // console.log(url);
   }
 
   setSeekTo(event:any){
     this.audioObj.currentTime = event.target.value
-    console.log(event.target.value)
+    // console.log(event.target.value)
   }
 
 
   play(){
     this.audioObj.play()
-    console.log('play button');
+    // console.log('play button');
   }
 
   pause(){
     this.audioObj.pause()
-    console.log('pause button');
+    // console.log('pause button');
   }
 
   stop(){
     this.audioObj.pause()
     this.audioObj.currentTime=0
-    console.log('stop button')
+    // console.log('stop button')
   }
 
   timeFormat(time:any,format="HH:mm:ss"){
