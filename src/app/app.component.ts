@@ -24,15 +24,15 @@ export class AppComponent {
   files = [
     {
       url:'./assets/song1.mp3',
-      name:'My Song1'
+      name:'Jeeta tha jiske liye'
     },
     {
       url:'./assets/song2.mp3',
-      name:'My Song2'
+      name:'Aakhome basa lunga'
     },
     {
       url:'./assets/song3.mp3',
-      name:'My Song3'
+      name:'Dil meri na sune'
     }
   ]
 

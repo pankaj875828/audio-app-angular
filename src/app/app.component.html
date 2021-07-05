@@ -1,7 +1,7 @@
 <h1>Audio App</h1>
 
 <ul>
-  <li *ngFor="let file of files" (click)="onClick(file.url)">{{file.name}}</li>
+  <li style="cursor: pointer;" *ngFor="let file of files" (click)="onClick(file.url)">{{file.name}}</li>
 </ul>
 
 <div>
